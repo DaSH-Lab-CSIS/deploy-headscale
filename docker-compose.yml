@@ -4,8 +4,8 @@ services:
     restart: unless-stopped
     container_name: headscale
     ports:
-      - "8080:8080"
-      - "9090:9090"
+      - "8081:8080"
+      - "8082:9090"
     volumes:
       - ./config:/etc/headscale
     command: serve
